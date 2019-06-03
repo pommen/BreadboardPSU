@@ -1,0 +1,1 @@
+Here we will put the firmware directories, libs and all
