@@ -1,3 +1,3 @@
 # BreadboardPSU
 
-All scematics designed in kicad. 
+All schematics designed in kicad. 
