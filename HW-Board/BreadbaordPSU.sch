@@ -568,4 +568,6 @@ Text Notes 900  1800 0    50   ~ 0
 Banana binding posts
 Text Notes 8500 5100 0    50   ~ 0
 Banana binding posts
+Text Notes 1400 6500 0    50   ~ 0
+Todo:\n\nMerge to fewer opamps\nex. OPA2189IDR
 $EndSCHEMATC

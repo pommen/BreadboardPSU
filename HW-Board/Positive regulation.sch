@@ -654,4 +654,6 @@ F 3 "" H 5450 2350 50  0001 C CNN
 	1    5450 2350
 	1    0    0    -1  
 $EndComp
+Text Notes 6350 2200 0    50   ~ 0
+LM395  ?
 $EndSCHEMATC

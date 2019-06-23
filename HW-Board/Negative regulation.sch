@@ -43,10 +43,10 @@ Wire Wire Line
 Wire Wire Line
 	8050 2900 8000 2900
 $Comp
-L Device:R R10
+L Device:R Rin3
 U 1 1 5D005FD1
 P 8250 2650
-F 0 "R10" V 8043 2650 50  0000 C CNN
+F 0 "Rin3" V 8043 2650 50  0000 C CNN
 F 1 "100K 1%" V 8134 2650 50  0000 C CNN
 F 2 "" V 8180 2650 50  0001 C CNN
 F 3 "~" H 8250 2650 50  0001 C CNN
@@ -56,10 +56,10 @@ $EndComp
 Wire Wire Line
 	8250 2950 8250 2850
 $Comp
-L Device:R R11
+L Device:R Rf3
 U 1 1 5D005FD8
 P 8800 3150
-F 0 "R11" V 8593 3150 50  0000 C CNN
+F 0 "Rf3" V 8593 3150 50  0000 C CNN
 F 1 "100K 1%" V 8684 3150 50  0000 C CNN
 F 2 "" V 8730 3150 50  0001 C CNN
 F 3 "~" H 8800 3150 50  0001 C CNN
@@ -127,10 +127,10 @@ $EndComp
 Wire Wire Line
 	6950 3000 6950 2900
 $Comp
-L Device:R Rf1
+L Device:R Rf2
 U 1 1 5D006004
 P 7500 3200
-F 0 "Rf1" V 7293 3200 50  0000 C CNN
+F 0 "Rf2" V 7293 3200 50  0000 C CNN
 F 1 "100K 1%" V 7384 3200 50  0000 C CNN
 F 2 "" V 7430 3200 50  0001 C CNN
 F 3 "~" H 7500 3200 50  0001 C CNN
@@ -310,7 +310,7 @@ F 3 "" H 7700 5100 50  0001 C CNN
 $EndComp
 Connection ~ 8250 2200
 Connection ~ 6950 2200
-Text Notes 5750 3800 0    50   ~ 0
+Text Notes 3450 950  0    50   ~ 0
 Inverting AMP:\nVout=  -Rf/Rin x Vin
 $Comp
 L Amplifier_Operational:OP07 U13
@@ -439,10 +439,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pd
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Rin1
+L Device:R Rf1
 U 1 1 5CFD1CAF
 P 4050 3850
-F 0 "Rin1" V 3843 3850 50  0000 C CNN
+F 0 "Rf1" V 3843 3850 50  0000 C CNN
 F 1 "100K 1%" V 3934 3850 50  0000 C CNN
 F 2 "" V 3980 3850 50  0001 C CNN
 F 3 "~" H 4050 3850 50  0001 C CNN
@@ -862,7 +862,7 @@ F 3 "" H 3000 3800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3250 3300 3750 3300
+	3250 3300 3350 3300
 $Comp
 L power:GNDA #PWR0210
 U 1 1 5D07F111
@@ -919,6 +919,39 @@ Wire Wire Line
 	3500 3850 3250 3850
 Wire Wire Line
 	3400 3550 3500 3550
-Text Notes 3000 5650 0    50   ~ 0
-Todo:\n\nMerge to fewer opamps
+Text Notes 3900 4200 0    50   ~ 0
+Flip to negative
+$Comp
+L Device:R Rin1
+U 1 1 5CF6E0E8
+P 3500 3300
+F 0 "Rin1" V 3293 3300 50  0000 C CNN
+F 1 "100K 1%" V 3384 3300 50  0000 C CNN
+F 2 "" V 3430 3300 50  0001 C CNN
+F 3 "~" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3300 3750 3300
+Text Notes 6450 3950 0    50   ~ 0
+Flip to positive
+Wire Notes Line
+	6300 2450 6300 4000
+Wire Notes Line
+	6300 4000 8900 4000
+Wire Notes Line
+	8900 4000 8900 2450
+Wire Notes Line
+	8900 2450 6300 2450
+Wire Notes Line
+	3400 4450 4500 4450
+Wire Notes Line
+	4500 4450 4500 1950
+Wire Notes Line
+	4500 1950 3400 1950
+Wire Notes Line
+	3400 1950 3400 4450
+Text Notes 5800 1850 0    50   ~ 0
+LM395?
 $EndSCHEMATC
