@@ -919,8 +919,6 @@ Wire Wire Line
 	3500 3850 3250 3850
 Wire Wire Line
 	3400 3550 3500 3550
-Text Notes 3000 5650 0    50   ~ 0
-Todo:\n\nMerge to fewer opamps
 Text Notes 3900 4200 0    50   ~ 0
 Flip to negative
 $Comp

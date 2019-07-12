@@ -236,11 +236,12 @@ Wire Wire Line
 Text HLabel 8500 2550 2    50   Input ~ 0
 VposOut
 $Comp
-L Peters:Si4435 Q?
+L BreadbaordPSU-rescue:Si4435-Peters Q?
 U 1 1 5CFA01F0
 P 6400 2650
 AR Path="/5CFAD453/5CFA01F0" Ref="Q?"  Part="1" 
 AR Path="/5CF8F081/5CFA01F0" Ref="Q2"  Part="1" 
+AR Path="/5CFA01F0" Ref="Q2"  Part="1" 
 F 0 "Q2" V 6743 2650 50  0000 C CNN
 F 1 "Si4435" V 6652 2650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 2950 50  0001 C CNN
