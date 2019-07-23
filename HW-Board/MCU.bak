@@ -630,19 +630,6 @@ F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Da
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D4D405D
-P 5100 1500
-AR Path="/5D4D405D" Ref="#PWR?"  Part="1" 
-AR Path="/5D42C521/5D4D405D" Ref="#PWR0159"  Part="1" 
-F 0 "#PWR0159" H 5100 1250 50  0001 C CNN
-F 1 "GND" H 5105 1327 50  0000 C CNN
-F 2 "" H 5100 1500 50  0001 C CNN
-F 3 "" H 5100 1500 50  0001 C CNN
-	1    5100 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0160
 U 1 1 5D4D49AD
 P 4500 1050
@@ -670,19 +657,6 @@ F 3 "~" H 5500 1350 50  0001 C CNN
 	1    5500 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D4D769E
-P 5500 1500
-AR Path="/5D4D769E" Ref="#PWR?"  Part="1" 
-AR Path="/5D42C521/5D4D769E" Ref="#PWR0161"  Part="1" 
-F 0 "#PWR0161" H 5500 1250 50  0001 C CNN
-F 1 "GND" H 5505 1327 50  0000 C CNN
-F 2 "" H 5500 1500 50  0001 C CNN
-F 3 "" H 5500 1500 50  0001 C CNN
-	1    5500 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 1200 5400 1200
 $Comp
@@ -700,19 +674,6 @@ F 3 "" H 5900 1100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 1100 5900 1100
-$Comp
-L power:GND #PWR?
-U 1 1 5D4DDDD2
-P 5900 1500
-AR Path="/5D4DDDD2" Ref="#PWR?"  Part="1" 
-AR Path="/5D42C521/5D4DDDD2" Ref="#PWR0163"  Part="1" 
-F 0 "#PWR0163" H 5900 1250 50  0001 C CNN
-F 1 "GND" H 5905 1327 50  0000 C CNN
-F 2 "" H 5900 1500 50  0001 C CNN
-F 3 "" H 5900 1500 50  0001 C CNN
-	1    5900 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 1100 5900 1200
 Connection ~ 5900 1100
@@ -1042,4 +1003,43 @@ Text GLabel 1400 6000 2    50   Input ~ 0
 RX
 Text GLabel 1400 5900 2    50   Input ~ 0
 TX
+$Comp
+L power:GND #PWR?
+U 1 1 5D4DDDD2
+P 5900 1500
+AR Path="/5D4DDDD2" Ref="#PWR?"  Part="1" 
+AR Path="/5D42C521/5D4DDDD2" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 5900 1250 50  0001 C CNN
+F 1 "GND" H 5905 1327 50  0000 C CNN
+F 2 "" H 5900 1500 50  0001 C CNN
+F 3 "" H 5900 1500 50  0001 C CNN
+	1    5900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D4D769E
+P 5500 1500
+AR Path="/5D4D769E" Ref="#PWR?"  Part="1" 
+AR Path="/5D42C521/5D4D769E" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 5500 1250 50  0001 C CNN
+F 1 "GND" H 5505 1327 50  0000 C CNN
+F 2 "" H 5500 1500 50  0001 C CNN
+F 3 "" H 5500 1500 50  0001 C CNN
+	1    5500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D4D405D
+P 5100 1500
+AR Path="/5D4D405D" Ref="#PWR?"  Part="1" 
+AR Path="/5D42C521/5D4D405D" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 5100 1250 50  0001 C CNN
+F 1 "GND" H 5105 1327 50  0000 C CNN
+F 2 "" H 5100 1500 50  0001 C CNN
+F 3 "" H 5100 1500 50  0001 C CNN
+	1    5100 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -262,30 +262,25 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pd
 	1    6050 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6750 2550 6600 2550
 Connection ~ 6750 2550
-Connection ~ 6600 2550
-Wire Wire Line
-	6600 2550 6550 2550
 $Comp
 L power:+12V #PWR?
 U 1 1 5CFA0200
-P 5900 2500
+P 5950 2500
 AR Path="/5CFA0200" Ref="#PWR?"  Part="1" 
 AR Path="/5CFAD453/5CFA0200" Ref="#PWR?"  Part="1" 
 AR Path="/5CF8F081/5CFA0200" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 5900 2350 50  0001 C CNN
-F 1 "+12V" H 5915 2673 50  0000 C CNN
-F 2 "" H 5900 2500 50  0001 C CNN
-F 3 "" H 5900 2500 50  0001 C CNN
-	1    5900 2500
+F 0 "#PWR0127" H 5950 2350 50  0001 C CNN
+F 1 "+12V" H 5965 2673 50  0000 C CNN
+F 2 "" H 5950 2500 50  0001 C CNN
+F 3 "" H 5950 2500 50  0001 C CNN
+	1    5950 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6250 2550 6200 2550
 Wire Wire Line
-	5900 2550 5900 2500
+	5950 2550 5950 2500
 Connection ~ 6200 2550
 Wire Wire Line
 	6200 2550 5950 2550
@@ -324,8 +319,6 @@ I2C_SDA
 Text HLabel 3950 3400 0    50   Input ~ 0
 I2C_SCL
 Connection ~ 5950 2550
-Wire Wire Line
-	5950 2550 5900 2550
 $Comp
 L Device:C C?
 U 1 1 5CFA021D
@@ -657,4 +650,6 @@ F 3 "" H 5450 2350 50  0001 C CNN
 $EndComp
 Text Notes 6350 2200 0    50   ~ 0
 LM395  ?
+Wire Wire Line
+	6550 2550 6750 2550
 $EndSCHEMATC
