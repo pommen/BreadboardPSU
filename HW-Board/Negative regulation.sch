@@ -82,19 +82,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 3150 8450 3150
 $Comp
-L power:+12V #PWR0177
-U 1 1 5D005FE8
-P 6500 3150
-F 0 "#PWR0177" H 6500 3000 50  0001 C CNN
-F 1 "+12V" H 6515 3323 50  0000 C CNN
-F 2 "" H 6500 3150 50  0001 C CNN
-F 3 "" H 6500 3150 50  0001 C CNN
-	1    6500 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 3200 6500 3200
-$Comp
 L power:GND #PWR0178
 U 1 1 5D005FF5
 P 6750 2950
@@ -300,28 +287,6 @@ Connection ~ 8250 2200
 Connection ~ 6950 2200
 Text Notes 3450 950  0    50   ~ 0
 Inverting AMP:\nVout=  -Rf/Rin x Vin
-$Comp
-L Amplifier_Operational:OP07 U13
-U 1 1 5D006074
-P 6850 3300
-F 0 "U13" V 6950 3550 50  0000 L CNN
-F 1 "OP07" V 6850 3500 50  0000 L CNN
-F 2 "" H 6900 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 6900 3450 50  0001 C CNN
-	1    6850 3300
-	0    -1   1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:OP07 U15
-U 1 1 5D00607A
-P 8150 3250
-F 0 "U15" V 8300 3450 50  0000 L CNN
-F 1 "OP07" V 8200 3400 50  0000 L CNN
-F 2 "" H 8200 3300 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 8200 3400 50  0001 C CNN
-	1    8150 3250
-	0    -1   1    0   
-$EndComp
 Text HLabel 7900 5050 3    50   Input ~ 0
 I2C_SDA
 Text HLabel 8000 5050 3    50   Input ~ 0
@@ -416,17 +381,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 1900 5100 1850
 $Comp
-L Amplifier_Operational:OP07 U11
-U 1 1 5CFD0F5A
-P 4100 3200
-F 0 "U11" H 4250 3350 50  0000 L CNN
-F 1 "OP07" H 4250 3450 50  0000 L CNN
-F 2 "" H 4150 3250 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 4150 3350 50  0001 C CNN
-	1    4100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R Rf1
 U 1 1 5CFD1CAF
 P 4050 3850
@@ -491,17 +445,6 @@ F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H
 	1    5900 2300
 	0    1    -1   0   
 $EndComp
-$Comp
-L Amplifier_Operational:OP07 U12
-U 1 1 5CFF7597
-P 5100 3300
-F 0 "U12" H 5250 3450 50  0000 L CNN
-F 1 "OP07" H 5250 3550 50  0000 L CNN
-F 2 "" H 5150 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 5150 3450 50  0001 C CNN
-	1    5100 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 3300 5900 3300
 $Comp
@@ -553,39 +496,6 @@ F 3 "" H 4050 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C30
-U 1 1 5D0227CE
-P 5400 3750
-F 0 "C30" H 5492 3796 50  0000 L CNN
-F 1 "100n50V" H 5492 3705 50  0000 L CNN
-F 2 "" H 5400 3750 50  0001 C CNN
-F 3 "~" H 5400 3750 50  0001 C CNN
-	1    5400 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0199
-U 1 1 5D0227D8
-P 5400 3650
-F 0 "#PWR0199" H 5400 3500 50  0001 C CNN
-F 1 "+12V" H 5415 3823 50  0000 C CNN
-F 2 "" H 5400 3650 50  0001 C CNN
-F 3 "" H 5400 3650 50  0001 C CNN
-	1    5400 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR0200
-U 1 1 5D0227E2
-P 5400 3850
-F 0 "#PWR0200" H 5400 3950 50  0001 C CNN
-F 1 "-12V" H 5415 4023 50  0000 C CNN
-F 2 "" H 5400 3850 50  0001 C CNN
-F 3 "" H 5400 3850 50  0001 C CNN
-	1    5400 3850
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C35
 U 1 1 5D027EE0
 P 9300 3000
@@ -630,17 +540,6 @@ F 3 "" H 9850 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0203
-U 1 1 5D005FEE
-P 7300 3200
-F 0 "#PWR0203" H 7300 2950 50  0001 C CNN
-F 1 "GND" H 7305 3027 50  0000 C CNN
-F 2 "" H 7300 3200 50  0001 C CNN
-F 3 "" H 7300 3200 50  0001 C CNN
-	1    7300 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0204
 U 1 1 5D005FC2
 P 8650 3200
@@ -677,33 +576,10 @@ Wire Wire Line
 	9300 3150 9300 3100
 Wire Wire Line
 	9850 3200 9850 3150
-$Comp
-L power:-12V #PWR0207
-U 1 1 5D03DC23
-P 5000 3600
-F 0 "#PWR0207" H 5000 3700 50  0001 C CNN
-F 1 "-12V" H 5015 3773 50  0000 C CNN
-F 2 "" H 5000 3600 50  0001 C CNN
-F 3 "" H 5000 3600 50  0001 C CNN
-	1    5000 3600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR0208
-U 1 1 5D03E477
-P 5000 3000
-F 0 "#PWR0208" H 5000 2850 50  0001 C CNN
-F 1 "+12V" H 5015 3173 50  0000 C CNN
-F 2 "" H 5000 3000 50  0001 C CNN
-F 3 "" H 5000 3000 50  0001 C CNN
-	1    5000 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 2200 6950 2200
 Wire Wire Line
 	4800 3200 4400 3200
-Connection ~ 4400 3200
 Wire Wire Line
 	4800 3400 4650 3400
 Wire Wire Line
@@ -1031,8 +907,49 @@ Wire Wire Line
 Connection ~ 2850 3300
 Wire Wire Line
 	2850 3300 3450 3300
-Wire Wire Line
-	6500 3200 6500 3150
-Wire Wire Line
-	7300 3200 7150 3200
+$Comp
+L Peters:MCP6V27 U?
+U 1 1 5D46FBA9
+P 8150 3250
+F 0 "U?" V 8104 2906 50  0000 R CNN
+F 1 "MCP6V27" V 8195 2906 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8050 3950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/25007b.pdf" H 8150 3250 50  0001 C CNN
+	1    8150 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Peters:MCP6V27 U?
+U 2 1 5D473C75
+P 6850 3300
+F 0 "U?" V 6804 3070 50  0000 R CNN
+F 1 "MCP6V27" V 6895 3070 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 4000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/25007b.pdf" H 6850 3300 50  0001 C CNN
+	2    6850 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Peters:MCP6V27 U?
+U 2 1 5D4831BF
+P 5100 3300
+F 0 "U?" H 5100 3667 50  0000 C CNN
+F 1 "MCP6V27" H 5100 3576 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 4000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/25007b.pdf" H 5100 3300 50  0001 C CNN
+	2    5100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Peters:MCP6V27 U?
+U 1 1 5D48E79E
+P 4100 3200
+F 0 "U?" H 4444 3246 50  0000 L CNN
+F 1 "MCP6V27" H 4444 3155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4000 3900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/25007b.pdf" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 3200
 $EndSCHEMATC
