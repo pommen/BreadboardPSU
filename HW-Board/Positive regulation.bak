@@ -236,20 +236,6 @@ Wire Wire Line
 Text HLabel 8500 2550 2    50   Input ~ 0
 VposOut
 $Comp
-L BreadbaordPSU-rescue:Si4435-Peters Q?
-U 1 1 5CFA01F0
-P 6400 2650
-AR Path="/5CFAD453/5CFA01F0" Ref="Q?"  Part="1" 
-AR Path="/5CF8F081/5CFA01F0" Ref="Q2"  Part="1" 
-AR Path="/5CFA01F0" Ref="Q2"  Part="1" 
-F 0 "Q2" V 6743 2650 50  0000 C CNN
-F 1 "Si4435" V 6652 2650 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 2950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/72123/72123.pdf" H 6250 3050 50  0001 C CNN
-	1    6400 2650
-	0    1    -1   0   
-$EndComp
-$Comp
 L Amplifier_Operational:OP07 U?
 U 1 1 5CFA01F6
 P 6050 3650
@@ -278,14 +264,7 @@ F 3 "" H 5950 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 2550 6200 2550
-Wire Wire Line
 	5950 2550 5950 2500
-Connection ~ 6200 2550
-Wire Wire Line
-	6200 2550 5950 2550
-Wire Wire Line
-	6400 2750 6400 3650
 Wire Wire Line
 	6400 3650 6350 3650
 Wire Wire Line
@@ -343,19 +322,6 @@ F 1 "GND" H 5755 3077 50  0000 C CNN
 F 2 "" H 5750 3250 50  0001 C CNN
 F 3 "" H 5750 3250 50  0001 C CNN
 	1    5750 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CFA0229
-P 5950 3950
-AR Path="/5CFAD453/5CFA0229" Ref="#PWR?"  Part="1" 
-AR Path="/5CF8F081/5CFA0229" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 5950 3700 50  0001 C CNN
-F 1 "GND" H 5955 3777 50  0000 C CNN
-F 2 "" H 5950 3950 50  0001 C CNN
-F 3 "" H 5950 3950 50  0001 C CNN
-	1    5950 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -466,7 +432,7 @@ F 3 "" H 5050 3400 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5300 3550 5750 3550
+	5300 3550 5550 3550
 $Comp
 L power:GND #PWR?
 U 1 1 5CFA0271
@@ -560,7 +526,7 @@ F 3 "" H 5200 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 3550 5200 3400
-Text Notes 4800 3900 0    50   ~ 0
+Text Notes 4750 4400 0    50   ~ 0
 Trim to 1/3 dac output
 Wire Wire Line
 	5450 2350 5450 2450
@@ -651,5 +617,56 @@ $EndComp
 Text Notes 6350 2200 0    50   ~ 0
 LM395  ?
 Wire Wire Line
+	6400 2750 6400 3650
+Wire Wire Line
 	6550 2550 6750 2550
+Wire Wire Line
+	6200 2550 5950 2550
+Wire Wire Line
+	6250 2550 6200 2550
+Connection ~ 6200 2550
+$Comp
+L BreadbaordPSU-rescue:Si4435-Peters Q?
+U 1 1 5CFA01F0
+P 6400 2650
+AR Path="/5CFAD453/5CFA01F0" Ref="Q?"  Part="1" 
+AR Path="/5CF8F081/5CFA01F0" Ref="Q2"  Part="1" 
+AR Path="/5CFA01F0" Ref="Q2"  Part="1" 
+F 0 "Q2" V 6743 2650 50  0000 C CNN
+F 1 "Si4435" V 6652 2650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 2950 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/72123/72123.pdf" H 6250 3050 50  0001 C CNN
+	1    6400 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5D3A546F
+P 5950 3950
+F 0 "#PWR?" H 5950 4050 50  0001 C CNN
+F 1 "-12V" H 5965 4123 50  0000 C CNN
+F 2 "" H 5950 3950 50  0001 C CNN
+F 3 "" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3A9231
+P 5250 4050
+F 0 "JP?" H 5250 4314 50  0000 C CNN
+F 1 "Jumper" H 5250 4223 50  0000 C CNN
+F 2 "" H 5250 4050 50  0001 C CNN
+F 3 "~" H 5250 4050 50  0001 C CNN
+	1    5250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4050 4950 3550
+Connection ~ 4950 3550
+Wire Wire Line
+	5550 4000 5550 3550
+Connection ~ 5550 3550
+Wire Wire Line
+	5550 3550 5750 3550
 $EndSCHEMATC
