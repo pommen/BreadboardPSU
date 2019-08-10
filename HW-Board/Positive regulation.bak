@@ -266,11 +266,11 @@ $EndComp
 Wire Wire Line
 	5950 2550 5950 2500
 Wire Wire Line
-	6400 3650 6350 3650
+	6450 3650 6350 3650
 Wire Wire Line
 	5750 3750 5750 4450
 Wire Wire Line
-	5750 4450 6400 4450
+	5750 4450 6450 4450
 Wire Wire Line
 	8450 4450 8450 2550
 Wire Wire Line
@@ -355,21 +355,21 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5CFA023C
-P 6400 4000
+P 6450 4000
 AR Path="/5CFAD453/5CFA023C" Ref="C?"  Part="1" 
 AR Path="/5CF8F081/5CFA023C" Ref="C9"  Part="1" 
-F 0 "C9" H 6515 4046 50  0000 L CNN
-F 1 "100n" H 6515 3955 50  0000 L CNN
-F 2 "" H 6438 3850 50  0001 C CNN
-F 3 "~" H 6400 4000 50  0001 C CNN
-	1    6400 4000
+F 0 "C9" H 6565 4046 50  0000 L CNN
+F 1 "100n" H 6565 3955 50  0000 L CNN
+F 2 "" H 6488 3850 50  0001 C CNN
+F 3 "~" H 6450 4000 50  0001 C CNN
+	1    6450 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3850 6400 3650
-Connection ~ 6400 3650
+	6450 3850 6450 3650
+Connection ~ 6450 3650
 Wire Wire Line
-	6400 4150 6400 4450
+	6450 4150 6450 4450
 Wire Wire Line
 	5950 2550 5950 2950
 Wire Wire Line
@@ -408,8 +408,8 @@ Wire Wire Line
 Wire Wire Line
 	3900 3700 3900 3850
 Wire Wire Line
-	6400 4450 8450 4450
-Connection ~ 6400 4450
+	6450 4450 8450 4450
+Connection ~ 6450 4450
 Wire Wire Line
 	7350 2550 7050 2550
 Connection ~ 7350 2550
@@ -617,28 +617,7 @@ $EndComp
 Text Notes 6350 2200 0    50   ~ 0
 LM395  ?
 Wire Wire Line
-	6400 2750 6400 3650
-Wire Wire Line
-	6550 2550 6750 2550
-Wire Wire Line
-	6200 2550 5950 2550
-Wire Wire Line
-	6250 2550 6200 2550
-Connection ~ 6200 2550
-$Comp
-L BreadbaordPSU-rescue:Si4435-Peters Q?
-U 1 1 5CFA01F0
-P 6400 2650
-AR Path="/5CFAD453/5CFA01F0" Ref="Q?"  Part="1" 
-AR Path="/5CF8F081/5CFA01F0" Ref="Q2"  Part="1" 
-AR Path="/5CFA01F0" Ref="Q2"  Part="1" 
-F 0 "Q2" V 6743 2650 50  0000 C CNN
-F 1 "Si4435" V 6652 2650 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 2950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/72123/72123.pdf" H 6250 3050 50  0001 C CNN
-	1    6400 2650
-	0    1    -1   0   
-$EndComp
+	6450 2850 6450 3650
 $Comp
 L power:-12V #PWR?
 U 1 1 5D3A546F
@@ -669,4 +648,19 @@ Wire Wire Line
 Connection ~ 5550 3550
 Wire Wire Line
 	5550 3550 5750 3550
+$Comp
+L Peters:SI4466 Q?
+U 1 1 5D4F6E86
+P 6400 2650
+F 0 "Q?" V 6728 2650 50  0000 C CNN
+F 1 "SI4466" V 6637 2650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6250 2350 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/71820/71820.pdf" H 6150 3000 50  0001 C CNN
+	1    6400 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2550 6200 2550
+Wire Wire Line
+	6600 2550 6750 2550
 $EndSCHEMATC
