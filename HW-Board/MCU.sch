@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title ""
+Title "Isolated adjustible +/- VDC PSU"
 Date ""
 Rev ""
 Comp ""

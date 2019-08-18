@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title ""
+Title "Isolated adjustible +/- VDC PSU"
 Date ""
 Rev ""
 Comp ""
@@ -241,8 +241,8 @@ U 1 1 5CFA01F6
 P 6050 3650
 AR Path="/5CFAD453/5CFA01F6" Ref="U?"  Part="1" 
 AR Path="/5CF8F081/5CFA01F6" Ref="U4"  Part="1" 
-F 0 "U4" H 6250 3850 50  0000 L CNN
-F 1 "OP07" H 6150 3800 50  0000 L CNN
+F 0 "U4" H 6050 3850 50  0000 L CNN
+F 1 "OP07" H 6050 3950 50  0000 L CNN
 F 2 "" H 6100 3700 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 6100 3800 50  0001 C CNN
 	1    6050 3650
@@ -297,14 +297,13 @@ Text HLabel 3950 3550 0    50   Input ~ 0
 I2C_SDA
 Text HLabel 3950 3400 0    50   Input ~ 0
 I2C_SCL
-Connection ~ 5950 2550
 $Comp
 L Device:C C?
 U 1 1 5CFA021D
 P 5750 3100
 AR Path="/5CFAD453/5CFA021D" Ref="C?"  Part="1" 
 AR Path="/5CF8F081/5CFA021D" Ref="C8"  Part="1" 
-F 0 "C8" H 5865 3146 50  0000 L CNN
+F 0 "C8" H 5550 3000 50  0000 L CNN
 F 1 "100n" V 5850 2900 50  0000 L CNN
 F 2 "" H 5788 2950 50  0001 C CNN
 F 3 "~" H 5750 3100 50  0001 C CNN
@@ -371,10 +370,7 @@ Connection ~ 6450 3650
 Wire Wire Line
 	6450 4150 6450 4450
 Wire Wire Line
-	5950 2550 5950 2950
-Wire Wire Line
 	5750 2950 5950 2950
-Connection ~ 5950 2950
 Wire Wire Line
 	5950 2950 5950 3350
 $Comp
@@ -424,8 +420,8 @@ U 1 1 5CFA026A
 P 5200 3150
 AR Path="/5CFAD453/5CFA026A" Ref="U?"  Part="1" 
 AR Path="/5CF8F081/5CFA026A" Ref="U3"  Part="1" 
-F 0 "U3" V 4750 3500 60  0000 L CNN
-F 1 "AD5245" V 4850 3450 60  0000 L CNN
+F 0 "U3" V 5250 2550 60  0000 L CNN
+F 1 "AD5245" V 5150 2550 60  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-8_Handsoldering" H 5050 3400 60  0001 C CNN
 F 3 "" H 5050 3400 60  0001 C CNN
 	1    5200 3150
@@ -663,4 +659,16 @@ Wire Wire Line
 	5950 2550 6200 2550
 Wire Wire Line
 	6600 2550 6750 2550
+$Comp
+L power:+15V #PWR?
+U 1 1 5D60B214
+P 5950 2950
+F 0 "#PWR?" H 5950 2800 50  0001 C CNN
+F 1 "+15V" H 5965 3123 50  0000 C CNN
+F 2 "" H 5950 2950 50  0001 C CNN
+F 3 "" H 5950 2950 50  0001 C CNN
+	1    5950 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 2950
 $EndSCHEMATC
