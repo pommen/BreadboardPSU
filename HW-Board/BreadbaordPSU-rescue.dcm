@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2N4401
+D General Purpose Transistor
+F http://192.168.0.108/api/part_attachments/1570/getFile
+$ENDCMP
+#
 $CMP Si4435-Peters
 F http://192.168.0.102/api/part_attachments/247/getFile
 $ENDCMP
