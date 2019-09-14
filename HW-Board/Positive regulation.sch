@@ -178,7 +178,7 @@ AR Path="/5CFAD453/5CFA01D3" Ref="C?"  Part="1"
 AR Path="/5CF8F081/5CFA01D3" Ref="C10"  Part="1" 
 F 0 "C10" H 6868 2746 50  0000 L CNN
 F 1 "10u tant" V 6900 2350 50  0000 L CNN
-F 2 "" H 6788 2550 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 6788 2550 50  0001 C CNN
 F 3 "~" H 6750 2700 50  0001 C CNN
 	1    6750 2700
 	1    0    0    -1  
@@ -212,7 +212,7 @@ AR Path="/5CFAD453/5CFA01E2" Ref="C?"  Part="1"
 AR Path="/5CF8F081/5CFA01E2" Ref="C11"  Part="1" 
 F 0 "C11" H 7168 2746 50  0000 L CNN
 F 1 "10u tant" V 7200 2350 50  0000 L CNN
-F 2 "" H 7088 2550 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 7088 2550 50  0001 C CNN
 F 3 "~" H 7050 2700 50  0001 C CNN
 	1    7050 2700
 	1    0    0    -1  
@@ -484,7 +484,7 @@ AR Path="/5CFAD453/5CFA02DF" Ref="C?"  Part="1"
 AR Path="/5CF8F081/5CFA02DF" Ref="C13"  Part="1" 
 F 0 "C13" H 8018 2746 50  0000 L CNN
 F 1 "10u tant" V 8050 2350 50  0000 L CNN
-F 2 "" H 7938 2550 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H_Pad1.50x2.35mm_HandSolder" H 7938 2550 50  0001 C CNN
 F 3 "~" H 7900 2700 50  0001 C CNN
 	1    7900 2700
 	1    0    0    -1  
@@ -579,7 +579,7 @@ U 1 1 5D3A9231
 P 5250 4050
 F 0 "JP3" H 5250 4314 50  0000 C CNN
 F 1 "Jumper" H 5250 4223 50  0000 C CNN
-F 2 "" H 5250 4050 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5250 4050 50  0001 C CNN
 F 3 "~" H 5250 4050 50  0001 C CNN
 	1    5250 4050
 	1    0    0    -1  
